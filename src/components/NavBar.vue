@@ -239,7 +239,9 @@
 
 						})
 						.then(data => {
-							
+                            
+                            console.log(data)
+
 							this.uploading = false
 
 							localStorage.setItem("encuestas", JSON.stringify(data.data.response.result));
@@ -253,10 +255,14 @@
 								'Las encuestas han sido subidas exitosamente!',
 								'success'
 							)
+
+                            
 					
 						})
 						.catch(error => {
                             
+                            console.log(error)
+
 							this.uploading = false
 
 							Swal.fire({

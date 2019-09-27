@@ -65,6 +65,7 @@
                             v-if="pregunta.type == 'text-area'"
                             v-model="respuestas['pregunta' + (index + 1)]"
                             :disabled="uploaded"
+                            value=""
                         ></b-form-textarea>
 
                     </b-form-group>
@@ -151,6 +152,8 @@
 
                 // Obtener la fecha y hora
                 let fecha = moment().format('DD/MM/YYYY HH:mm:ss')
+
+                console.log(this.respuestas)
 
                 let nueva_encuesta = {
                     respuestas: this.respuestas,

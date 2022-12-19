@@ -1,4 +1,6 @@
-# app_encuestas
+# Aplicación de Encuestas
+
+Aplicación por medio de la cuál se registra una serie de encuestas en la dirección. 
 
 ## Project setup
 ```
